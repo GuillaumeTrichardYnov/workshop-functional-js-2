@@ -22,7 +22,15 @@ const asyncYolo = (cb) => {
   //   cb(['AZEQSDWXC' , 'RTYFGHVBN', 'UIOJKL'])
   // }, 800)
 
-  // Your future job begins here ...
+  Promise.all([promise200, promise400, promise600]).then(values => {
+      var result = [[], [], []];
+      values.map(function(x, index, array) {
+          x.map(function(x2, index2) {
+              result[index2].push(x[index2])
+          })
+      })
+    return result;
+  });
 
 }
 

@@ -9,7 +9,6 @@ const reverseYolo = input => {
     .reduce(_.multiply, 1)
     .value();
 }
-
 module.exports = {
   reverseYolo: reverseYolo,
   run: reverseYolo
